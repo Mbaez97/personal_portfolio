@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Marcelo Báez</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f1fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            background-color: #b3cde0;
+            width: 30%;
+            padding: 20px;
+            border-radius: 15px 0 0 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .sidebar h1 {
+            margin: 15px 0 5px;
+            color: #1a3551;
+        }
+        .sidebar p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .sidebar a {
+            color: #1a3551;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .sidebar .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .main-content {
+            padding: 40px;
+            width: 70%;
+            border-radius: 0 15px 15px 0;
+        }
+        .main-content h2 {
+            color: #1a3551;
+            border-bottom: 2px solid #b3cde0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .technologies img {
+            width: 100px;
+            height: auto;
+        }
+
+        .languages {
+            margin-top: 40px;
+        }
+
+        .languages h2 {
+            color: #1a3551;
+            border-bottom: 2px solid #b3cde0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .language-bar {
+            margin-bottom: 10px;
+        }
+
+        .language-bar p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background-color: #d0e6fa;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 5px;
+            height: 10px;
+        }
+
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            background-color: #1a3551;
+        }
+
+        /* Specific language progress bar lengths */
+        .espanhol { width: 100%; }
+        .ingles { width: 80%; }
+        .portugues { width: 60%; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <img src="path_to_your_photo.jpg" alt="Foto de Marcelo Báez">
+        <h1>Marcelo Báez</h1>
+        <p>Desarrollador de Software</p>
+        <a href="https://www.linkedin.com/in/marcelobaez97/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Mbaez97" target="_blank">GitHub</a>
+        <div class="contact-info">
+            <p>Email: marcelobaezparaguay@gmail.com</p>
+            <p>Nacimiento: 29 de julio de 1997</p>
+            <p>Ubicación: Río de Janeiro, Brasil</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <h2>Sobre Mi</h2>
+        <p>Actualmente soy desarrollador de software con experiencia en tecnologías modernas y enfoque en la creación de aplicaciones eficientes y escalables. Mi experiencia incluye trabajar con una variedad de lenguajes y herramientas, siempre con un enfoque en el aprendizaje continuo y la mejora de mis habilidades.</p>
+        
+        <h2>Tecnologías</h2>
+        <div class="technologies">
+            <img src="path_to_tensorflow_logo.png" alt="TensorFlow">
+            <img src="path_to_sklearn_logo.png" alt="Scikit-learn">
+            <img src="path_to_nodejs_logo.png" alt="Node.js">
+            <img src="path_to_numpy_logo.png" alt="NumPy">
+            <img src="path_to_pandas_logo.png" alt="Pandas">
+        </div>
+        <div class="languages">
+            <h2>Idiomas</h2>
+
+            <div class="language-bar">
+                <p>Español <span>Nativo</span></p>
+                <div class="progress-bar">
+                    <span class="espanhol"></span>
+                </div>
+            </div>
+
+            <div class="language-bar">
+                <p>Inglés <span>Intermedio B1</span></p>
+                <div class="progress-bar">
+                    <span class="ingles"></span>
+                </div>
+            </div>
+
+            <div class="language-bar">
+                <p>Portugués <span>Intermedio Bajo</span></p>
+                <div class="progress-bar">
+                    <span class="portugues"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
