@@ -4,153 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Marcelo Báez</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #e9f1fc;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-            max-width: 1200px;
-            margin: 20px auto;
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .sidebar {
-            background-color: #b3cde0;
-            width: 30%;
-            padding: 20px;
-            border-radius: 15px 0 0 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .sidebar img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .sidebar h1 {
-            margin: 15px 0 5px;
-            color: #1a3551;
-        }
-        .sidebar p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        .sidebar a {
-            color: #1a3551;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 10px 0;
-        }
-        .sidebar .contact-info {
-            margin-top: 20px;
-            font-size: 14px;
-        }
-        .main-content {
-            padding: 40px;
-            width: 70%;
-            border-radius: 0 15px 15px 0;
-        }
-        .main-content h2 {
-            color: #1a3551;
-            border-bottom: 2px solid #b3cde0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .technologies {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .technologies img {
-            width: 100px;
-            height: auto;
-        }
-
-        .languages {
-            margin-top: 40px;
-        }
-
-        .languages h2 {
-            color: #1a3551;
-            border-bottom: 2px solid #b3cde0;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        .language-bar {
-            margin-bottom: 10px;
-        }
-
-        .language-bar p {
-            margin: 0;
-            font-size: 16px;
-            color: #333;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .progress-bar {
-            width: 100%;
-            background-color: #d0e6fa;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-top: 5px;
-            height: 10px;
-        }
-
-        .progress-bar span {
-            display: block;
-            height: 100%;
-            background-color: #1a3551;
-        }
-
-        /* Specific language progress bar lengths */
-        .espanhol { width: 100%; }
-        .ingles { width: 80%; }
-        .portugues { width: 60%; }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="container">
     <div class="sidebar">
-        <img src="path_to_your_photo.jpg" alt="Foto de Marcelo Báez">
+        <img src="static/foto_marcelo.JPG" alt="Foto de Marcelo Báez">
         <h1>Marcelo Báez</h1>
-        <p>Desarrollador de Software</p>
+        <p>Software Engineer</p>
+        <p>Machine Learning Researcher</p>
+        <!-- <a href="https://twitter.com/@marcelobaezf" target="blank">
+            <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@marcelobaezf" height="30" width="40" />
+        </a>
+        <a href="https://linkedin.com/in/marcelobaez97" target="blank">
+            <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="marcelobaez97" height="30" width="40" />
+        </a> -->
         <a href="https://www.linkedin.com/in/marcelobaez97/" target="_blank">LinkedIn</a>
         <a href="https://github.com/Mbaez97" target="_blank">GitHub</a>
         <div class="contact-info">
             <p>Email: marcelobaezparaguay@gmail.com</p>
-            <p>Nacimiento: 29 de julio de 1997</p>
-            <p>Ubicación: Río de Janeiro, Brasil</p>
+            <p>Birthdate: July 29, 1997</p>
+            <p>Location: Rio de Janeiro, Brazil</p>
         </div>
     </div>
     <div class="main-content">
-        <h2>Sobre Mi</h2>
-        <p>Actualmente soy desarrollador de software con experiencia en tecnologías modernas y enfoque en la creación de aplicaciones eficientes y escalables. Mi experiencia incluye trabajar con una variedad de lenguajes y herramientas, siempre con un enfoque en el aprendizaje continuo y la mejora de mis habilidades.</p>
+        <h2>About me</h2>
+        <p>
+            I'm a Software Engineer with a focus on Machine Learning and Data Science. 
+            I have experience in developing and deploying machine learning models, as well as working with large datasets. 
+            Additionally, I have extensive experience developing complex systems, both as a backend and frontend developer. 
+            My goal is to leverage technology to solve real-world problems and contribute to the advancement of AI.
+        </p>
         
-        <h2>Tecnologías</h2>
+        <h2>Frameworks and programming languages:</h2>
         <div class="technologies">
-            <img src="path_to_tensorflow_logo.png" alt="TensorFlow">
-            <img src="path_to_sklearn_logo.png" alt="Scikit-learn">
-            <img src="path_to_nodejs_logo.png" alt="Node.js">
-            <img src="path_to_numpy_logo.png" alt="NumPy">
-            <img src="path_to_pandas_logo.png" alt="Pandas">
+            <p align="left" style="display: flex; flex-wrap: wrap; gap: 5px;">
+                <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="32" height="32"/>
+                </a>
+                <a href="https://pytorch.org/" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="32" height="32"/>
+                </a>
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="32" height="32"/>
+                </a>
+                <a href="https://redis.io" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="32" height="32"/>
+                </a>
+                <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="32" height="32"/>
+                </a>
+                <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="32" height="32"/>
+                </a>
+                <a href="https://angular.io" target="_blank" rel="noreferrer">
+                    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="32" height="32"/>
+                </a>
+                <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="32" height="32"/>
+                </a>
+                <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="32" height="32"/>
+                </a>
+                <a href="https://www.elastic.co" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="32" height="32"/>
+                </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="32" height="32"/>
+                </a>
+                <a href="https://grafana.com" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="32" height="32"/>
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="32" height="32"/>
+                </a>
+                <a href="https://kubernetes.io" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="32" height="32"/>
+                </a>
+                <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="32" height="32"/>
+                </a>
+                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="32" height="32"/>
+                </a>
+                <a href="https://www.nginx.com" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="32" height="32"/>
+                </a>
+                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="32" height="32"/>
+                </a>
+                <a href="https://postman.com" target="_blank" rel="noreferrer">
+                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="32" height="32"/>
+                </a>
+                <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
+                    <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="32" height="32"/>
+                </a>
+            </p>
         </div>
         <div class="languages">
-            <h2>Idiomas</h2>
-
+            <h2>Languages</h2>
             <div class="language-bar">
                 <p>Español <span>Nativo</span></p>
                 <div class="progress-bar">
@@ -171,6 +124,19 @@
                     <span class="portugues"></span>
                 </div>
             </div>
+        </div>
+        <div class="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    <strong>Title:</strong> ClusterONE Web: a tool for discovering and analyzing overlapping protein complexes<br>
+                    <strong>Authors:</strong> Marcelo Báez, et al.<br>
+                    <strong>Journal:</strong> Nucleic Acids Research, 2025<br>
+                    <a href="https://doi.org/10.1093/nar/gkaf368" target="_blank">[DOI]</a>
+                </li>
+
+                <!-- Add more papers as needed -->
+            </ul>
         </div>
     </div>
 </div>
