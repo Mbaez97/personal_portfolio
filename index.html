@@ -1,143 +1,622 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Marcelo Báez</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Marcelo Báez — PhD Researcher &amp; Software Engineer</title>
+<meta name="description" content="Marcelo Báez is a PhD researcher in Applied Mathematics and Data Science at Paccanaro Lab, FGV EMAp (Rio de Janeiro), and a full-stack software engineer. He works on protein function prediction, protein–protein interaction networks, and research tools that people can actually use.">
+<meta name="author" content="Marcelo Báez">
+<link rel="canonical" href="https://mbaez97.github.io/personal_portfolio/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Marcelo Báez — PhD Researcher &amp; Software Engineer">
+<meta property="og:description" content="Machine learning on biological networks — protein function prediction, protein complexes, and the software that makes research usable.">
+<meta property="og:url" content="https://mbaez97.github.io/personal_portfolio/">
+<meta property="og:image" content="https://mbaez97.github.io/personal_portfolio/static/marcelo-900.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="profile:first_name" content="Marcelo">
+<meta property="profile:last_name" content="Báez">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Marcelo Báez — PhD Researcher &amp; Software Engineer">
+<meta name="twitter:description" content="Machine learning on biological networks — protein function prediction, protein complexes, and research tools.">
+<meta name="twitter:image" content="https://mbaez97.github.io/personal_portfolio/static/marcelo-900.jpg">
+
+<meta name="theme-color" content="#f6f8fc" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2f4f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%237fd1c1' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="static/marcelo-450.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<script>
+  // Applied before first paint so the correct theme renders immediately.
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    } catch (e) { /* storage blocked — keep the light default */ }
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Marcelo Báez",
+  "alternateName": "Marcelo Julián Báez Ferreira",
+  "jobTitle": "PhD Researcher in Applied Mathematics and Data Science",
+  "description": "PhD researcher working on machine learning for biological networks, and a full-stack software engineer with 6+ years of professional experience.",
+  "url": "https://mbaez97.github.io/personal_portfolio/",
+  "image": "https://mbaez97.github.io/personal_portfolio/static/marcelo-900.jpg",
+  "email": "mailto:marcelobaezparaguay@gmail.com",
+  "nationality": { "@type": "Country", "name": "Paraguay" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rio de Janeiro",
+    "addressCountry": "BR"
+  },
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Paccanaro Lab — FGV EMAp, Fundação Getulio Vargas",
+    "url": "https://paccanarolab.org/"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Universidad Católica \"Nuestra Señora de la Asunción\""
+  },
+  "knowsAbout": [
+    "Machine learning",
+    "Protein function prediction",
+    "Protein–protein interaction networks",
+    "Graph clustering",
+    "Bioinformatics",
+    "Full-stack software engineering"
+  ],
+  "knowsLanguage": ["Spanish", "English", "Portuguese"],
+  "sameAs": [
+    "https://github.com/Mbaez97",
+    "https://www.linkedin.com/in/marcelobaez97/",
+    "https://orcid.org/0009-0001-3135-1087",
+    "https://paccanarolab.org/team/marcelo-baez/"
+  ]
+}
+</script>
 </head>
+
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="container">
-    <div class="sidebar">
-        <img src="static/foto_marcelo.JPG" alt="Foto de Marcelo Báez">
-        <h1>Marcelo Báez</h1>
-        <p>Software Engineer</p>
-        <p>Machine Learning Researcher</p>
-        <!-- <a href="https://twitter.com/@marcelobaezf" target="blank">
-            <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@marcelobaezf" height="30" width="40" />
-        </a>
-        <a href="https://linkedin.com/in/marcelobaez97" target="blank">
-            <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="marcelobaez97" height="30" width="40" />
-        </a> -->
-        <a href="https://www.linkedin.com/in/marcelobaez97/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Mbaez97" target="_blank">GitHub</a>
-        <div class="contact-info">
-            <p>Email: marcelobaezparaguay@gmail.com</p>
-            <p>Birthdate: July 29, 1997</p>
-            <p>Location: Rio de Janeiro, Brazil</p>
-        </div>
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-text">Marcelo&nbsp;Báez</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Section navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><path d="M12 2.6v2.6M12 18.8v2.6M2.6 12h2.6M18.8 12h2.6M5.3 5.3l1.9 1.9M16.8 16.8l1.9 1.9M18.7 5.3l-1.9 1.9M7.2 16.8l-1.9 1.9"/></g></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2Z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></svg>
+      </button>
     </div>
-    <div class="main-content">
-        <h2>About me</h2>
-        <p>
-            I am passionate about technology, especially in designing and developing tools. I am also strongly interested in machine learning, so I am pursuing a PhD in Applied Mathematics and Data Science. I have six years of professional experience in designing and developing complex systems and tools. 
-            I am a collaborative person who enjoys working in a team. I am a natural leader and can perform well under pressure.
+  </div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" id="top">
+    <canvas class="hero-net" id="heroNet" aria-hidden="true"></canvas>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          Rio de Janeiro, Brazil · from Asunción, Paraguay
         </p>
-        
-        <h2>Frameworks and programming languages:</h2>
-        <div class="technologies">
-            <p align="left" style="display: flex; flex-wrap: wrap; gap: 5px;">
-                <a href="https://www.python.org" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="32" height="32"/>
-                </a>
-                <a href="https://pytorch.org/" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="32" height="32"/>
-                </a>
-                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="32" height="32"/>
-                </a>
-                <a href="https://redis.io" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="32" height="32"/>
-                </a>
-                <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="32" height="32"/>
-                </a>
-                <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="32" height="32"/>
-                </a>
-                <a href="https://angular.io" target="_blank" rel="noreferrer">
-                    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="32" height="32"/>
-                </a>
-                <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="32" height="32"/>
-                </a>
-                <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="32" height="32"/>
-                </a>
-                <a href="https://www.elastic.co" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="32" height="32"/>
-                </a>
-                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="32" height="32"/>
-                </a>
-                <a href="https://grafana.com" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="32" height="32"/>
-                </a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="32" height="32"/>
-                </a>
-                <a href="https://kubernetes.io" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="32" height="32"/>
-                </a>
-                <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="32" height="32"/>
-                </a>
-                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="32" height="32"/>
-                </a>
-                <a href="https://www.nginx.com" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="32" height="32"/>
-                </a>
-                <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="32" height="32"/>
-                </a>
-                <a href="https://postman.com" target="_blank" rel="noreferrer">
-                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="32" height="32"/>
-                </a>
-                <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer">
-                    <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="32" height="32"/>
-                </a>
-            </p>
-        </div>
-        <div class="languages">
-            <h2>Languages</h2>
-            <div class="language-bar">
-                <p>Español <span>Nativo</span></p>
-                <div class="progress-bar">
-                    <span class="espanhol"></span>
-                </div>
-            </div>
 
-            <div class="language-bar">
-                <p>Inglés <span>Intermedio B1</span></p>
-                <div class="progress-bar">
-                    <span class="ingles"></span>
-                </div>
-            </div>
+        <h1 class="hero-title">
+          Marcelo Báez
+        </h1>
 
-            <div class="language-bar">
-                <p>Portugués <span>Intermedio Bajo</span></p>
-                <div class="progress-bar">
-                    <span class="portugues"></span>
-                </div>
-            </div>
-        </div>
-        <div class="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>
-                    <strong>Title:</strong> ClusterONE Web: a tool for discovering and analyzing overlapping protein complexes<br>
-                    <strong>Authors:</strong> Marcelo Báez, et al.<br>
-                    <strong>Journal:</strong> Nucleic Acids Research, 2025<br>
-                    <a href="https://doi.org/10.1093/nar/gkaf368" target="_blank">[DOI]</a>
-                </li>
+        <p class="hero-role">
+          PhD researcher in <em>Applied Mathematics &amp; Data Science</em><br>
+          and full-stack software engineer.
+        </p>
 
-                <!-- Add more papers as needed -->
-            </ul>
+        <p class="hero-lede">
+          I work on machine learning for biological networks at the
+          <a href="https://paccanarolab.org/team/marcelo-baez/" target="_blank" rel="noopener">Paccanaro Lab</a>
+          (<a href="https://emap.fgv.br/en" target="_blank" rel="noopener">FGV EMAp</a>) — predicting protein function
+          and finding protein complexes in interaction networks. Six years of engineering before that taught me
+          the part researchers often skip: a method only counts once someone else can run it.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#publications">
+            Read the research
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
+
+        <ul class="social" aria-label="Profiles">
+          <li><a href="https://github.com/Mbaez97" target="_blank" rel="noopener" aria-label="GitHub" data-tip="GitHub">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path class="fill" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-1.9c-3.12.68-3.78-1.5-3.78-1.5-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.63 1.22 3.27.94.1-.73.39-1.22.71-1.5-2.49-.29-5.11-1.25-5.11-5.55 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.09 1.15a10.7 10.7 0 0 1 5.62 0c2.15-1.45 3.09-1.15 3.09-1.15.61 1.54.23 2.68.11 2.96.72.79 1.15 1.79 1.15 3.02 0 4.31-2.62 5.26-5.12 5.54.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/marcelobaez97/" target="_blank" rel="noopener" aria-label="LinkedIn" data-tip="LinkedIn">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path class="fill" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.06c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.77V21h-4v-5.66c0-1.35-.03-3.09-1.96-3.09-1.96 0-2.26 1.47-2.26 2.99V21h-4V9Z"/></svg>
+          </a></li>
+          <li><a href="https://orcid.org/0009-0001-3135-1087" target="_blank" rel="noopener" aria-label="ORCID" data-tip="ORCID">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path class="fill" d="M12 1.6a10.4 10.4 0 1 0 0 20.8 10.4 10.4 0 0 0 0-20.8ZM8.1 17.4H6.7V8.9h1.4v8.5ZM7.4 7.6a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8Zm5.9 9.8h-3.1V8.9h3.2c3 0 4.4 2 4.4 4.3 0 2.4-1.9 4.2-4.5 4.2Zm-.1-7.2h-1.6v5.9h1.6c2 0 3.1-1.2 3.1-2.9 0-1.8-1.1-3-3.1-3Z"/></svg>
+          </a></li>
+          <li><a href="mailto:marcelobaezparaguay@gmail.com" aria-label="Email" data-tip="Email">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.2 8.5-6.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a></li>
+        </ul>
+      </div>
+
+      <figure class="hero-photo">
+        <img src="static/marcelo-900.jpg"
+             srcset="static/marcelo-450.jpg 337w, static/marcelo-900.jpg 675w"
+             sizes="(max-width: 860px) 190px, 340px"
+             width="675" height="900"
+             alt="Portrait of Marcelo Báez" fetchpriority="high" decoding="async">
+        <figcaption class="photo-badge">
+          <span class="badge-k">Currently</span>
+          <span class="badge-v">PhD · Paccanaro Lab</span>
+        </figcaption>
+      </figure>
     </div>
-</div>
+  </section>
 
+  <!-- ============================ ABOUT ============================ -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-kicker">01 — About</p>
+        <h2 class="section-title">Between the method and the people who use it</h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="prose">
+          <p>
+            I am a software engineer who moved into research, and I have kept both halves. I spent six years
+            designing and building complex production systems before starting a PhD in Applied Mathematics and
+            Data Science at FGV EMAp in Rio de Janeiro, where I now work on machine learning for biological
+            networks in <a href="https://paccanarolab.org/" target="_blank" rel="noopener">Alberto Paccanaro's</a> group.
+          </p>
+          <p>
+            That combination shapes what I choose to work on. A clustering algorithm that only its author can run
+            is not finished; neither is a web tool with no method behind it. My published work so far sits exactly
+            on that seam — taking an established algorithm for finding overlapping protein complexes and turning it
+            into something a biologist can open in a browser and get an answer from.
+          </p>
+          <p>
+            I like working in teams, I am comfortable leading one, and I do my best work under a deadline.
+            I grew up and trained as an engineer in Paraguay, and I am now based in Brazil.
+          </p>
+        </div>
+
+        <aside class="facts" aria-label="Quick facts">
+          <dl>
+            <div><dt>Role</dt><dd>PhD researcher &amp; software engineer</dd></div>
+            <div><dt>Lab</dt><dd><a href="https://paccanarolab.org/" target="_blank" rel="noopener">Paccanaro Lab</a>, FGV EMAp</dd></div>
+            <div><dt>Based in</dt><dd>Rio de Janeiro, Brazil</dd></div>
+            <div><dt>Field</dt><dd>ML on biological networks</dd></div>
+            <div><dt>ORCID</dt><dd><a href="https://orcid.org/0009-0001-3135-1087" target="_blank" rel="noopener">0009-0001-3135-1087</a></dd></div>
+          </dl>
+        </aside>
+      </div>
+
+      <!-- Background timeline -->
+      <h3 class="sub-title" id="background">Background</h3>
+      <ol class="timeline">
+        <li class="tl-item is-current">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <p class="tl-when">Mar 2024 — present</p>
+          <h4 class="tl-what">PhD Researcher, Applied Mathematics &amp; Data Science</h4>
+          <p class="tl-where">Paccanaro Lab · FGV EMAp, Fundação Getulio Vargas — Rio de Janeiro, Brazil</p>
+          <p class="tl-note">
+            Machine learning for protein function prediction and protein complex discovery in
+            protein–protein interaction networks. First author of ClusterONE Web (<em>Nucleic Acids Research</em>, 2025).
+          </p>
+        </li>
+
+        <!--
+          ADD YOUR PROFESSIONAL ROLES HERE — copy this block for each one:
+
+          <li class="tl-item">
+            <span class="tl-dot" aria-hidden="true"></span>
+            <p class="tl-when">2021 — 2024</p>
+            <h4 class="tl-what">Job title</h4>
+            <p class="tl-where">Company — City, Country</p>
+            <p class="tl-note">One or two sentences: what you built, the scale, the stack.</p>
+          </li>
+        -->
+
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <p class="tl-when">Six years before the PhD</p>
+          <h4 class="tl-what">Full-Stack Software Engineer</h4>
+          <p class="tl-where">Software industry — Asunción, Paraguay</p>
+          <p class="tl-note">
+            Six years designing, building and operating complex systems end to end — Python and Django services,
+            React and Angular front ends, relational and document stores, containerised deployments and monitoring.
+          </p>
+        </li>
+
+        <li class="tl-item">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <p class="tl-when">2016 — Dec 2023</p>
+          <h4 class="tl-what">Software Engineering degree</h4>
+          <p class="tl-where">Universidad Católica “Nuestra Señora de la Asunción” — Asunción, Paraguay</p>
+          <p class="tl-note">Algorithms, parallel computing, compilers and software architecture.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================ RESEARCH ============================ -->
+  <section class="section section-alt" id="research">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-kicker">02 — Research</p>
+        <h2 class="section-title">What I am working on</h2>
+        <p class="section-lede">
+          Proteins do their work in groups, and most of those groups are still uncharacterised. My research uses
+          the structure of interaction networks — plus what sequence models already know — to predict what a
+          protein does and which complex it belongs to.
+        </p>
+      </header>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="6" cy="7" r="2.3"/><circle cx="18" cy="6" r="2.3"/><circle cx="12" cy="13" r="2.3"/><circle cx="5" cy="18" r="2.3"/><circle cx="18.5" cy="17.5" r="2.3"/><path d="M7.7 8.3 10.4 11.6M16.2 7.4 13.4 11.3M10.6 14.6 6.6 16.4M13.9 14.4l2.9 1.8"/></svg>
+          </div>
+          <h3>Protein function prediction</h3>
+          <p>
+            Label propagation over biological networks, set against what protein language models already infer
+            from sequence alone. The question underneath: when does network structure still carry information a
+            sequence model misses, and for which organisms? This is the core of my doctoral thesis, in progress.
+          </p>
+          <p class="card-tags"><span>Graph ML</span><span>Protein language models</span><span>Benchmarking</span></p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="9" cy="12" r="5.2"/><circle cx="15" cy="12" r="5.2"/></svg>
+          </div>
+          <h3>Overlapping protein complexes</h3>
+          <p>
+            Proteins belong to more than one complex at a time, so the clustering has to overlap. ClusterONE
+            detects those communities in weighted and unweighted PPI networks; my work brought it to the web
+            with curated multi-organism datasets and Gene Ontology enrichment built in.
+          </p>
+          <p class="card-tags"><span>Overlapping clustering</span><span>PPI networks</span><span>GO enrichment</span></p>
+          <a class="card-link" href="https://paccanarolab.org/clusteroneweb/" target="_blank" rel="noopener">
+            Try ClusterONE Web
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 20h18" stroke-linecap="round"/><rect x="4.5" y="12" width="3.4" height="6" rx="1"/><rect x="10.3" y="8" width="3.4" height="10" rx="1"/><rect x="16.1" y="4.5" width="3.4" height="13.5" rx="1"/></svg>
+          </div>
+          <h3>Research tools people can use</h3>
+          <p>
+            Reproducible pipelines, published result bundles with hashed manifests, and interfaces that let a
+            reader check a claim rather than take it on faith. This is where the engineering years pay for
+            themselves.
+          </p>
+          <p class="card-tags"><span>Reproducibility</span><span>Scientific web apps</span><span>Data visualisation</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PUBLICATIONS ============================ -->
+  <section class="section" id="publications">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-kicker">03 — Publications</p>
+        <h2 class="section-title">Peer-reviewed work</h2>
+      </header>
+
+      <ol class="pubs">
+        <li class="pub">
+          <div class="pub-year"><span>2025</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">
+              <a href="https://doi.org/10.1093/nar/gkaf368" target="_blank" rel="noopener">
+                ClusterONE Web: a tool for discovering and analyzing overlapping protein complexes
+              </a>
+            </h3>
+            <p class="pub-authors">
+              <strong>Marcelo Baez</strong>, Ruben Jimenez, Luca Cernuzzi, Alberto Paccanaro
+            </p>
+            <p class="pub-venue">
+              <span class="venue-badge">Nucleic Acids Research</span>
+              Vol. 53, Issue W1, pages W172–W177 · Web Server Issue · July 2025
+            </p>
+            <p class="pub-abstract">
+              ClusterONE detects overlapping protein complexes in weighted and unweighted protein–protein
+              interaction networks. We built a free, platform-independent web version: a database of preprocessed
+              PPI datasets across multiple organisms, support for user-uploaded interaction data, an interactive
+              view of the detected complexes, and Gene Ontology enrichment analysis for interpreting them — with
+              nothing to install.
+            </p>
+            <p class="pub-links">
+              <a class="chip-link" href="https://doi.org/10.1093/nar/gkaf368" target="_blank" rel="noopener">DOI</a>
+              <a class="chip-link" href="https://academic.oup.com/nar/article/53/W1/W172/8133624" target="_blank" rel="noopener">Publisher</a>
+              <a class="chip-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12230668/" target="_blank" rel="noopener">Full text (PMC)</a>
+              <a class="chip-link" href="https://paccanarolab.org/clusteroneweb/" target="_blank" rel="noopener">Tool</a>
+              <button class="chip-link chip-btn" type="button" data-bibtex="pub-clusterone-web">Copy BibTeX</button>
+            </p>
+            <pre class="bibtex" id="pub-clusterone-web" hidden>@article{baez2025clusteroneweb,
+  author  = {Baez, Marcelo and Jimenez, Ruben and Cernuzzi, Luca and Paccanaro, Alberto},
+  title   = {{ClusterONE Web}: a tool for discovering and analyzing overlapping protein complexes},
+  journal = {Nucleic Acids Research},
+  volume  = {53},
+  number  = {W1},
+  pages   = {W172--W177},
+  year    = {2025},
+  doi     = {10.1093/nar/gkaf368},
+  url     = {https://doi.org/10.1093/nar/gkaf368}
+}</pre>
+          </div>
+        </li>
+      </ol>
+
+      <p class="pubs-foot">
+        Full record on
+        <a href="https://orcid.org/0009-0001-3135-1087" target="_blank" rel="noopener">ORCID</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ PROJECTS ============================ -->
+  <section class="section section-alt" id="projects">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-kicker">04 — Projects</p>
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-lede">Research tools, course projects and things I built because I wanted them to exist.</p>
+      </header>
+
+      <div class="projects">
+        <article class="proj proj-feature">
+          <p class="proj-kind">Research tool · published</p>
+          <h3><a href="https://paccanarolab.org/clusteroneweb/" target="_blank" rel="noopener">ClusterONE Web</a></h3>
+          <p>
+            A browser-based platform for detecting overlapping protein complexes in PPI networks. Ships with
+            preprocessed datasets for multiple organisms, accepts your own interaction data, renders the detected
+            complexes interactively and runs Gene Ontology enrichment on them. Published in the
+            <em>Nucleic Acids Research</em> 2025 Web Server Issue.
+          </p>
+          <p class="proj-tags"><span>Python</span><span>Web</span><span>Bioinformatics</span><span>GO enrichment</span></p>
+          <p class="proj-links">
+            <a href="https://paccanarolab.org/clusteroneweb/" target="_blank" rel="noopener">Live tool</a>
+            <a href="https://doi.org/10.1093/nar/gkaf368" target="_blank" rel="noopener">Paper</a>
+          </p>
+        </article>
+
+        <article class="proj">
+          <p class="proj-kind">Machine learning</p>
+          <h3><a href="https://github.com/Mbaez97/final-project-RL" target="_blank" rel="noopener">Reinforcement Learning projects</a></h3>
+          <p>
+            Coursework from the PhD reinforcement learning track at EMAp — agent implementations, training runs and
+            written analysis, worked through in notebooks rather than hidden behind a framework.
+          </p>
+          <p class="proj-tags"><span>Python</span><span>PyTorch</span><span>Jupyter</span></p>
+          <p class="proj-links">
+            <a href="https://github.com/Mbaez97/final-project-RL" target="_blank" rel="noopener">Final project</a>
+            <a href="https://github.com/Mbaez97/project-1-RL-EMAP" target="_blank" rel="noopener">Project 1</a>
+          </p>
+        </article>
+
+        <article class="proj">
+          <p class="proj-kind">Visual analytics</p>
+          <h3><a href="https://github.com/Mbaez97/vast-challenge3-2025" target="_blank" rel="noopener">VAST Challenge 2025 — Mini-Challenge 3</a></h3>
+          <p>
+            An entry for the IEEE VAST visual analytics challenge: exploratory analysis and custom visualisations
+            built to answer the challenge questions from a messy, partially-hidden dataset.
+          </p>
+          <p class="proj-tags"><span>Python</span><span>Visual analytics</span><span>Jupyter</span></p>
+          <p class="proj-links">
+            <a href="https://github.com/Mbaez97/vast-challenge3-2025" target="_blank" rel="noopener">Source</a>
+          </p>
+        </article>
+
+        <article class="proj">
+          <p class="proj-kind">Infrastructure · side project</p>
+          <h3><a href="https://github.com/Mbaez97/personal-automatization" target="_blank" rel="noopener">Local-first automation stack</a></h3>
+          <p>
+            A self-hosted n8n + Ollama setup that runs entirely on your own machine, wired up to automate real
+            chores — including an expense pipeline that reads PDF receipts with a local model and files them into
+            a spreadsheet. No third-party model sees the documents.
+          </p>
+          <p class="proj-tags"><span>Docker</span><span>n8n</span><span>Ollama</span><span>Local LLMs</span></p>
+          <p class="proj-links">
+            <a href="https://github.com/Mbaez97/personal-automatization" target="_blank" rel="noopener">Stack</a>
+            <a href="https://github.com/Mbaez97/LocalModel-AI-Expense" target="_blank" rel="noopener">Expense pipeline</a>
+          </p>
+        </article>
+
+        <article class="proj">
+          <p class="proj-kind">Systems · compilers</p>
+          <h3><a href="https://github.com/Mbaez97/tsTocplusplus" target="_blank" rel="noopener">TypeScript → C++ transpiler</a></h3>
+          <p>
+            A source-to-source compiler built from a lexer and grammar up. Alongside it, a parallel travelling
+            salesman solver in C with OpenMP — the two projects where I learned what performance actually costs.
+          </p>
+          <p class="proj-tags"><span>Lex/Yacc</span><span>C</span><span>OpenMP</span></p>
+          <p class="proj-links">
+            <a href="https://github.com/Mbaez97/tsTocplusplus" target="_blank" rel="noopener">Transpiler</a>
+            <a href="https://github.com/Mbaez97/Tsp_OpenMp_parallel" target="_blank" rel="noopener">Parallel TSP</a>
+          </p>
+        </article>
+      </div>
+
+      <p class="projects-foot">
+        <a class="btn btn-ghost" href="https://github.com/Mbaez97?tab=repositories" target="_blank" rel="noopener">
+          All repositories on GitHub
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ TOOLKIT ============================ -->
+  <section class="section" id="toolkit">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="section-kicker">05 — Toolkit</p>
+        <h2 class="section-title">Languages, frameworks &amp; tools</h2>
+      </header>
+
+      <div class="stacks">
+        <div class="stack">
+          <h3>Languages &amp; core</h3>
+          <ul class="chips">
+            <li><img src="static/icons/python.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Python</span></li>
+            <li><img src="static/icons/typescript.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TypeScript</span></li>
+            <li><img src="static/icons/javascript.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>JavaScript</span></li>
+            <li><img src="static/icons/c.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>C</span></li>
+            <li><img src="static/icons/bash.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Bash</span></li>
+            <li><img src="static/icons/linux.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Linux</span></li>
+            <li><img src="static/icons/git.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Git</span></li>
+          </ul>
+        </div>
+
+        <div class="stack">
+          <h3>Machine learning &amp; research</h3>
+          <ul class="chips">
+            <li><img src="static/icons/pytorch.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>PyTorch</span></li>
+            <li><img src="static/icons/tensorflow.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TensorFlow</span></li>
+            <li><img src="static/icons/numpy.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>NumPy</span></li>
+            <li><img src="static/icons/pandas.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>pandas</span></li>
+            <li><img src="static/icons/jupyter.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Jupyter</span></li>
+          </ul>
+        </div>
+
+        <div class="stack">
+          <h3>Backend &amp; data</h3>
+          <ul class="chips">
+            <li><img src="static/icons/django.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Django</span></li>
+            <li><img src="static/icons/postgresql.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>PostgreSQL</span></li>
+            <li><img src="static/icons/mongodb.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>MongoDB</span></li>
+            <li><img src="static/icons/redis.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Redis</span></li>
+            <li><img src="static/icons/elasticsearch.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Elasticsearch</span></li>
+          </ul>
+        </div>
+
+        <div class="stack">
+          <h3>Front end</h3>
+          <ul class="chips">
+            <li><img src="static/icons/react.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>React</span></li>
+            <li><img src="static/icons/angular.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Angular</span></li>
+            <li><img src="static/icons/d3js.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>D3.js</span></li>
+          </ul>
+        </div>
+
+        <div class="stack">
+          <h3>Infrastructure &amp; ops</h3>
+          <ul class="chips">
+            <li><img src="static/icons/docker.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Docker</span></li>
+            <li><img src="static/icons/kubernetes.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Kubernetes</span></li>
+            <li><img src="static/icons/nginx.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Nginx</span></li>
+            <li><img src="static/icons/grafana.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Grafana</span></li>
+            <li><img src="static/icons/postman.svg" alt="" width="22" height="22" loading="lazy" decoding="async"><span>Postman</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Spoken languages</h3>
+      <ul class="langs">
+        <li>
+          <p class="lang-head"><span class="lang-name">Spanish</span> <span class="lang-level">Native</span></p>
+          <div class="meter" role="meter" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Spanish proficiency: native">
+            <span style="--fill:100%"></span>
+          </div>
+        </li>
+        <li>
+          <p class="lang-head"><span class="lang-name">English</span> <span class="lang-level">Intermediate · B1</span></p>
+          <div class="meter" role="meter" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="English proficiency: intermediate B1">
+            <span style="--fill:60%"></span>
+          </div>
+        </li>
+        <li>
+          <p class="lang-head"><span class="lang-name">Portuguese</span> <span class="lang-level">Advanced · living and working in Brazil</span></p>
+          <div class="meter" role="meter" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Portuguese proficiency: advanced">
+            <span style="--fill:85%"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================ CONTACT ============================ -->
+  <section class="section section-contact" id="contact">
+    <div class="wrap">
+      <div class="contact-box">
+        <div>
+          <p class="section-kicker">06 — Contact</p>
+          <h2 class="section-title">Let's talk</h2>
+          <p class="section-lede">
+            Open to research collaborations, questions about ClusterONE Web, and interesting engineering problems.
+            Email is the surest way to reach me.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:marcelobaezparaguay@gmail.com">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.5 6.5 8.5 6.2 8.5-6.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            marcelobaezparaguay@gmail.com
+          </a>
+          <div class="contact-links">
+            <a href="https://github.com/Mbaez97" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/marcelobaez97/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://orcid.org/0009-0001-3135-1087" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://paccanarolab.org/team/marcelo-baez/" target="_blank" rel="noopener">Lab profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Marcelo Báez · Rio de Janeiro, Brazil</p>
+    <p class="footer-meta">
+      Built with plain HTML, CSS and JavaScript ·
+      <a href="https://github.com/Mbaez97/personal_portfolio" target="_blank" rel="noopener">Source</a>
+    </p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
 </body>
 </html>
